@@ -9,7 +9,7 @@ O usuário poderá cadastrar seus produtos de forma fácil e prática para exibi
 ## Tecnologias usadas
 - Backend em Laravel
 - Frontend em NextJS
-- Banco de dados PostgreSQL
+- Banco de dados MySQL
 
 ## Módulos Backend
 - [ ]  Sistema de login
