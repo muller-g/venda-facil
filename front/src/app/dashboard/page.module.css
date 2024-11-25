@@ -1,0 +1,21 @@
+.page_content {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.wrapp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.wrapp a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -1,3 +1,7 @@
+:root {
+  --green-ck: rgb(49, 151, 149);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,3 +14,6 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 16px;
+}

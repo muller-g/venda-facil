@@ -1,17 +1,3 @@
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
-
-export default async function Dashboard() {
-  const session = await getServerSession();
-
-  if(!session){
-    redirect("/")
+export default function DashboardPage() {
+    return <h1>Bem-vindo ao Dashboard</h1>;
   }
-
-  return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Olá, {session?.user?.name} </p>
-    </div>
-  );
-}
