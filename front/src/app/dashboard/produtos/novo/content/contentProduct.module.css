@@ -1,0 +1,46 @@
+.page_content {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.page_content .wrapp {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    display: inline-flex;
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.input_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.wrapp_items {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.item_wrapp {
+    width: 100%;
+}
+
+.button_wrapp {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}

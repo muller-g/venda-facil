@@ -4,13 +4,14 @@ import styles from './inputImage.module.css';
 import { RiFileUploadFill } from "react-icons/ri";
 import { useEffect, useState } from 'react';
 
-export default function InputImage() {
+export default function InputImage({setImages}: any) {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [images, setImages] = useState<any>([]);
+    const [imagesPrev, setImagesPrev] = useState<any>([]);
     const [previewImage, setPreviewImage] = useState<any>('');
 
     const handleChangeImage = (e: any) => {
         setImages(Array.from(e.target.files))
+        setImagesPrev(Array.from(e.target.files))
     }
 
     const handleOpenModal = (image: any) => {
@@ -27,7 +28,7 @@ export default function InputImage() {
             </div>
             <div className={styles.show_images}>
                 {
-                    images?.map((image: any) => (
+                    imagesPrev?.map((image: any) => (
                         <div className={styles.image_prev} onClick={() => handleOpenModal(image)}>
                             <img src={image ? URL.createObjectURL(image) : ''} alt="" />
                             {/* <span className={styles.input_image_name}>{image?.name}</span> */}
